@@ -1,6 +1,9 @@
 *.class
-
+*.bak
 # Package Files #
 *.jar
 *.war
 *.ear
+~*
+backupdb*
+*.lock
