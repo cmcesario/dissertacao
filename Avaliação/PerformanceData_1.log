@@ -1,0 +1,356 @@
+21:11:45,857  INFO [RepositoryMonitor        ] checkWorkingFolder -> Working folder is at C:\Users\Cristiano\.dyevc.
+21:11:46,531  INFO [RepositoryMonitor        ] Found 0 repositories to monitor.
+21:12:12,423  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:12:15,727  INFO [GitConnector             ] Found 2 remotes for repository rep1393978316405
+21:12:17,817  INFO [RepositoryMonitor        ] Repository <dyevc> with id <rep1393978316405> was checked. Elapsed time: 0:00:05.363
+21:12:17,835  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Started updating repository.
+21:12:19,511  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Repository does not exist in topology.
+21:12:21,148  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Finished updating repository.
+21:12:21,159  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Started updating commits. Will now retrieve previous snapshot.
+21:12:21,176  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:12:21,432  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> currentSnapshot: 187 commits. Will now identify new commits.
+21:12:21,449  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> newCommits: 187 commits. Will now identify commits not found in known repositories.
+21:12:22,335  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:12:22,354  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToInsert: 187 commits. Will now insert them into the database.
+21:12:22,373  INFO [CommitDAO                ] Upserting commits from 0 to 187 from a total of 187 commits into system <dyevc>.
+21:12:24,031  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:12:24,092  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Current snapshot saved.
+21:12:24,112  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:12:24,124  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:12:24,147  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:12:24,162  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Checking orphaned commits.
+21:12:24,984  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Orphaned commits checked.
+21:12:24,992  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405 -> Finished updating commits.)
+21:12:25,000  INFO [RepositoryMonitor        ] Topology for repository <dyevc> with id <rep1393978316405> was updated. Elapsed time: 0:00:07.166
+21:14:14,644  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:14:17,293  INFO [GitConnector             ] Found 2 remotes for repository rep1393978439044
+21:14:20,343  WARN [GitConnector             ] cannot testAhead branch <issue55> declared in repository <rep1393978439044>.
+21:14:20,354  INFO [RepositoryMonitor        ] Repository <dyevcssh> with id <rep1393978439044> was checked. Elapsed time: 0:00:05.668
+21:14:20,370  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Started updating repository.
+21:14:21,994  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Repository does not exist in topology.
+21:14:23,177  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Finished updating repository.
+21:14:23,185  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Started updating commits. Will now retrieve previous snapshot.
+21:14:23,197  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:14:23,422  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> currentSnapshot: 120 commits. Will now identify new commits.
+21:14:23,443  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> newCommits: 120 commits. Will now identify commits not found in known repositories.
+21:14:26,985  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> commitsNotFoundInSomeReps: 187 commits. Will now identify which of newCommits should be inserted.
+21:14:26,999  INFO [CommitDAO                ] Getting hashes for commits from 0 to 80 from a total of 120 commits for the system <dyevc>.
+21:14:28,179  INFO [CommitDAO                ] Getting hashes for commits from 80 to 120 from a total of 120 commits for the system <dyevc>.
+21:14:29,099  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> commitsToInsert: 1 commits. Will now insert them into the database.
+21:14:29,111  INFO [CommitDAO                ] Upserting commits from 0 to 1 from a total of 1 commits into system <dyevc>.
+21:14:29,951  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:14:29,979  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Current snapshot saved.
+21:14:29,990  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:14:30,002  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> commitsNotFoundInSomeRepsWithoutDeletions: 187 commits. Will now remove deleted commits.
+21:14:30,013  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> commitsToUpdate: 119 commits. Will now check which of them are new in related repositories.
+21:14:30,029  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> 119 commits must be updated to include repository rep1393978439044 and 68 should not.
+21:14:30,040  INFO [CommitDAO                ] Updating all commits except 68 commits for system <dyevc> to include repository rep1393978439044.
+21:14:31,053  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Checking orphaned commits.
+21:14:31,859  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044) -> Orphaned commits checked.
+21:14:31,867  INFO [TopologyUpdater          ] dyevc:dyevcssh(rep1393978439044 -> Finished updating commits.)
+21:14:31,873  INFO [RepositoryMonitor        ] Topology for repository <dyevcssh> with id <rep1393978439044> was updated. Elapsed time: 0:00:11.504
+21:15:27,578  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:15:27,595  INFO [GitConnector             ] Found 2 remotes for repository rep1393978316405
+21:15:29,230  INFO [RepositoryMonitor        ] Repository <dyevc> with id <rep1393978316405> was checked. Elapsed time: 0:00:01.648
+21:15:29,241  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Started updating repository.
+21:15:30,781  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Repository already exists in topology.
+21:15:30,793  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Finished updating repository.
+21:15:30,807  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Started updating commits. Will now retrieve previous snapshot.
+21:15:30,870  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> previousSnapshots: 187 commit(s). Will now retrieve current snapshot.
+21:15:31,090  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> currentSnapshot: 187 commits. Will now identify new commits.
+21:15:31,113  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> newCommits: 0 commits. Will now identify commits not found in known repositories.
+21:15:32,651  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsNotFoundInSomeReps: 3 commits. Will now identify which of newCommits should be inserted.
+21:15:32,668  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:15:32,681  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:15:32,713  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Current snapshot saved.
+21:15:32,727  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:15:32,736  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsNotFoundInSomeRepsWithoutDeletions: 3 commits. Will now remove deleted commits.
+21:15:32,748  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> commitsToUpdate: 2 commits. Will now check which of them are new in related repositories.
+21:15:32,768  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> No changes detected in where commits exist. There will not be updates.
+21:15:32,779  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Checking orphaned commits.
+21:15:33,631  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405) -> Orphaned commits checked.
+21:15:33,642  INFO [TopologyUpdater          ] dyevc:dyevc(rep1393978316405 -> Finished updating commits.)
+21:15:33,654  INFO [RepositoryMonitor        ] Topology for repository <dyevc> with id <rep1393978316405> was updated. Elapsed time: 0:00:04.416
+21:16:39,936  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:16:48,455  INFO [GitConnector             ] Found 2 remotes for repository rep1393978563774
+21:16:52,558  INFO [RepositoryMonitor        ] Repository <sapos> with id <rep1393978563774> was checked. Elapsed time: 0:00:12.616
+21:16:52,585  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Started updating repository.
+21:16:54,191  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Repository does not exist in topology.
+21:16:55,721  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Finished updating repository.
+21:16:55,726  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Started updating commits. Will now retrieve previous snapshot.
+21:16:55,733  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:16:56,550  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> currentSnapshot: 704 commits. Will now identify new commits.
+21:16:56,567  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> newCommits: 704 commits. Will now identify commits not found in known repositories.
+21:16:57,362  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:16:57,370  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToInsert: 704 commits. Will now insert them into the database.
+21:16:57,379  INFO [CommitDAO                ] Upserting commits from 0 to 704 from a total of 704 commits into system <sapos>.
+21:16:59,117  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:16:59,265  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Current snapshot saved.
+21:16:59,279  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:16:59,290  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:16:59,298  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:16:59,394  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Checking orphaned commits.
+21:17:00,800  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Orphaned commits checked.
+21:17:00,803  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774 -> Finished updating commits.)
+21:17:00,809  INFO [RepositoryMonitor        ] Topology for repository <sapos> with id <rep1393978563774> was updated. Elapsed time: 0:00:08.225
+21:17:42,307  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:17:49,860  INFO [GitConnector             ] Found 2 remotes for repository rep1393978647836
+21:17:54,664  INFO [RepositoryMonitor        ] Repository <saposTeste> with id <rep1393978647836> was checked. Elapsed time: 0:00:12.354
+21:17:54,669  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Started updating repository.
+21:17:56,652  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Repository does not exist in topology.
+21:17:57,680  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Finished updating repository.
+21:17:57,684  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Started updating commits. Will now retrieve previous snapshot.
+21:17:57,707  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:17:58,448  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> currentSnapshot: 704 commits. Will now identify new commits.
+21:17:58,498  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> newCommits: 704 commits. Will now identify commits not found in known repositories.
+21:18:01,093  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> commitsNotFoundInSomeReps: 704 commits. Will now identify which of newCommits should be inserted.
+21:18:01,106  INFO [CommitDAO                ] Getting hashes for all commits in database in system <sapos>.
+21:18:03,118  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:18:03,130  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:18:03,155  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Current snapshot saved.
+21:18:03,161  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:18:03,171  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> commitsNotFoundInSomeRepsWithoutDeletions: 704 commits. Will now remove deleted commits.
+21:18:03,180  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> commitsToUpdate: 704 commits. Will now check which of them are new in related repositories.
+21:18:03,203  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> 704 commits must be updated to include repository rep1393978647836 and 0 should not.
+21:18:03,213  INFO [CommitDAO                ] Updating all commits except 0 commits for system <sapos> to include repository rep1393978647836.
+21:18:04,099  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Checking orphaned commits.
+21:18:05,025  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836) -> Orphaned commits checked.
+21:18:05,033  INFO [TopologyUpdater          ] sapos:saposTeste(rep1393978647836 -> Finished updating commits.)
+21:18:05,036  INFO [RepositoryMonitor        ] Topology for repository <saposTeste> with id <rep1393978647836> was updated. Elapsed time: 0:00:10.368
+21:18:33,267  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:18:33,282  INFO [GitConnector             ] Found 2 remotes for repository rep1393978563774
+21:18:35,035  INFO [RepositoryMonitor        ] Repository <sapos> with id <rep1393978563774> was checked. Elapsed time: 0:00:01.766
+21:18:35,040  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Started updating repository.
+21:18:36,724  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Repository already exists in topology.
+21:18:36,727  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Finished updating repository.
+21:18:36,730  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Started updating commits. Will now retrieve previous snapshot.
+21:18:36,970  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> previousSnapshots: 704 commit(s). Will now retrieve current snapshot.
+21:18:37,690  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> currentSnapshot: 704 commits. Will now identify new commits.
+21:18:37,711  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> newCommits: 0 commits. Will now identify commits not found in known repositories.
+21:18:39,282  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:18:39,287  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:18:39,291  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:18:39,328  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Current snapshot saved.
+21:18:39,334  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:18:39,338  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:18:39,342  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:18:39,346  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Checking orphaned commits.
+21:18:40,185  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774) -> Orphaned commits checked.
+21:18:40,187  INFO [TopologyUpdater          ] sapos:sapos(rep1393978563774 -> Finished updating commits.)
+21:18:40,190  INFO [RepositoryMonitor        ] Topology for repository <sapos> with id <rep1393978563774> was updated. Elapsed time: 0:00:05.151
+21:20:33,684  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:20:53,825  INFO [GitConnector             ] Found 2 remotes for repository rep1393978814836
+21:21:04,128  INFO [RepositoryMonitor        ] Repository <jgit> with id <rep1393978814836> was checked. Elapsed time: 0:00:30.439
+21:21:04,132  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Started updating repository.
+21:21:05,778  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Repository does not exist in topology.
+21:21:07,305  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Finished updating repository.
+21:21:07,308  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Started updating commits. Will now retrieve previous snapshot.
+21:21:07,311  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:21:10,134  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> currentSnapshot: 2985 commits. Will now identify new commits.
+21:21:10,140  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> newCommits: 2985 commits. Will now identify commits not found in known repositories.
+21:21:11,278  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:21:11,282  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToInsert: 2985 commits. Will now insert them into the database.
+21:21:11,296  INFO [CommitDAO                ] Upserting commits from 0 to 2985 from a total of 2985 commits into system <jgit>.
+21:21:15,287  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:21:15,333  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Current snapshot saved.
+21:21:15,339  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:21:15,343  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:21:15,351  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:21:15,356  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Checking orphaned commits.
+21:21:16,129  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Orphaned commits checked.
+21:21:16,132  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836 -> Finished updating commits.)
+21:21:16,134  INFO [RepositoryMonitor        ] Topology for repository <jgit> with id <rep1393978814836> was updated. Elapsed time: 0:00:12.003
+21:25:00,627  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:25:19,000  INFO [GitConnector             ] Found 2 remotes for repository rep1393979087856
+21:25:32,099  INFO [RepositoryMonitor        ] Repository <jgitTeste> with id <rep1393979087856> was checked. Elapsed time: 0:00:31.470
+21:25:32,106  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Started updating repository.
+21:25:33,600  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Repository does not exist in topology.
+21:25:34,343  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Finished updating repository.
+21:25:34,345  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Started updating commits. Will now retrieve previous snapshot.
+21:25:34,351  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:25:36,967  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> currentSnapshot: 2985 commits. Will now identify new commits.
+21:25:36,971  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> newCommits: 2985 commits. Will now identify commits not found in known repositories.
+21:25:41,952  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> commitsNotFoundInSomeReps: 2985 commits. Will now identify which of newCommits should be inserted.
+21:25:41,957  INFO [CommitDAO                ] Getting hashes for all commits in database in system <jgit>.
+21:25:44,417  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:25:44,421  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:25:44,469  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Current snapshot saved.
+21:25:44,476  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:25:44,483  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> commitsNotFoundInSomeRepsWithoutDeletions: 2985 commits. Will now remove deleted commits.
+21:25:44,500  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> commitsToUpdate: 2985 commits. Will now check which of them are new in related repositories.
+21:25:44,533  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> 2985 commits must be updated to include repository rep1393979087856 and 0 should not.
+21:25:44,537  INFO [CommitDAO                ] Updating all commits except 0 commits for system <jgit> to include repository rep1393979087856.
+21:25:45,882  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Checking orphaned commits.
+21:25:46,689  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856) -> Orphaned commits checked.
+21:25:46,691  INFO [TopologyUpdater          ] jgit:jgitTeste(rep1393979087856 -> Finished updating commits.)
+21:25:46,694  INFO [RepositoryMonitor        ] Topology for repository <jgitTeste> with id <rep1393979087856> was updated. Elapsed time: 0:00:14.588
+21:26:27,520  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:26:27,575  INFO [GitConnector             ] Found 2 remotes for repository rep1393978814836
+21:26:33,447  INFO [RepositoryMonitor        ] Repository <jgit> with id <rep1393978814836> was checked. Elapsed time: 0:00:05.921
+21:26:33,451  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Started updating repository.
+21:26:35,012  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Repository already exists in topology.
+21:26:35,015  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Finished updating repository.
+21:26:35,018  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Started updating commits. Will now retrieve previous snapshot.
+21:26:35,123  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> previousSnapshots: 2985 commit(s). Will now retrieve current snapshot.
+21:26:37,846  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> currentSnapshot: 2985 commits. Will now identify new commits.
+21:26:37,855  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> newCommits: 0 commits. Will now identify commits not found in known repositories.
+21:26:39,428  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:26:39,432  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:26:39,440  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:26:39,471  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Current snapshot saved.
+21:26:39,478  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:26:39,481  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:26:39,512  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:26:39,516  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Checking orphaned commits.
+21:26:40,296  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836) -> Orphaned commits checked.
+21:26:40,299  INFO [TopologyUpdater          ] jgit:jgit(rep1393978814836 -> Finished updating commits.)
+21:26:40,310  INFO [RepositoryMonitor        ] Topology for repository <jgit> with id <rep1393978814836> was updated. Elapsed time: 0:00:06.860
+21:27:15,045  INFO [TopologyWindow           ] Time taken to process topology graph for system <jgit>: 0:00:03.417
+21:27:15,076  INFO [TopologyWindow           ] Time taken to plot topology graph for system <jgit>: 0:00:00.029
+21:28:04,987  INFO [CommitHistoryWindow      ] Process commit history graph for repository <jgit> with id <rep1393978814836>. Elapsed time: 0:00:18.452
+21:28:05,007  INFO [CommitHistoryWindow      ] Plot commit history graph for repository <jgit> with id <rep1393978814836>. Elapsed time: 0:00:00.015
+21:29:20,145  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:29:43,635  INFO [GitConnector             ] Found 2 remotes for repository rep1393979339806
+21:29:55,195  INFO [RepositoryMonitor        ] Repository <egit> with id <rep1393979339806> was checked. Elapsed time: 0:00:35.046
+21:29:55,199  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Started updating repository.
+21:29:56,855  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Repository does not exist in topology.
+21:29:59,151  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Finished updating repository.
+21:29:59,153  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Started updating commits. Will now retrieve previous snapshot.
+21:29:59,156  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:30:02,294  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> currentSnapshot: 3785 commits. Will now identify new commits.
+21:30:02,302  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> newCommits: 3785 commits. Will now identify commits not found in known repositories.
+21:30:03,061  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:30:03,065  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToInsert: 3785 commits. Will now insert them into the database.
+21:30:03,082  INFO [CommitDAO                ] Upserting commits from 0 to 3000 from a total of 3785 commits into <egit>.
+21:30:07,116  INFO [CommitDAO                ] Upserting commits from 3000 to 3785 from a total of 3785 commits into system <egit>.
+21:30:08,935  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:30:08,983  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Current snapshot saved.
+21:30:08,989  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:30:08,992  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:30:08,999  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:30:09,004  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Checking orphaned commits.
+21:30:09,797  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Orphaned commits checked.
+21:30:09,800  INFO [TopologyUpdater          ] egit:egit(rep1393979339806 -> Finished updating commits.)
+21:30:09,802  INFO [RepositoryMonitor        ] Topology for repository <egit> with id <rep1393979339806> was updated. Elapsed time: 0:00:14.604
+21:36:14,327  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:36:33,774  INFO [GitConnector             ] Found 2 remotes for repository rep1393979763986
+21:36:45,852  INFO [RepositoryMonitor        ] Repository <egitTeste> with id <rep1393979763986> was checked. Elapsed time: 0:00:31.523
+21:36:45,856  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Started updating repository.
+21:36:47,847  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Repository does not exist in topology.
+21:36:48,703  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Finished updating repository.
+21:36:48,705  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Started updating commits. Will now retrieve previous snapshot.
+21:36:48,712  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:36:51,847  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> currentSnapshot: 3785 commits. Will now identify new commits.
+21:36:51,852  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> newCommits: 3785 commits. Will now identify commits not found in known repositories.
+21:36:55,894  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> commitsNotFoundInSomeReps: 3785 commits. Will now identify which of newCommits should be inserted.
+21:36:55,955  INFO [CommitDAO                ] Getting hashes for all commits in database in system <egit>.
+21:36:58,389  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:36:58,392  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:36:58,447  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Current snapshot saved.
+21:36:58,453  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:36:58,456  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> commitsNotFoundInSomeRepsWithoutDeletions: 3785 commits. Will now remove deleted commits.
+21:36:58,468  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> commitsToUpdate: 3785 commits. Will now check which of them are new in related repositories.
+21:36:58,502  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> 3785 commits must be updated to include repository rep1393979763986 and 0 should not.
+21:36:58,504  INFO [CommitDAO                ] Updating all commits except 0 commits for system <egit> to include repository rep1393979763986.
+21:37:00,057  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Checking orphaned commits.
+21:37:00,959  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986) -> Orphaned commits checked.
+21:37:00,961  INFO [TopologyUpdater          ] egit:egitTeste(rep1393979763986 -> Finished updating commits.)
+21:37:00,964  INFO [RepositoryMonitor        ] Topology for repository <egitTeste> with id <rep1393979763986> was updated. Elapsed time: 0:00:15.109
+21:37:29,982  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:37:29,994  INFO [GitConnector             ] Found 2 remotes for repository rep1393979339806
+21:37:34,221  INFO [RepositoryMonitor        ] Repository <egit> with id <rep1393979339806> was checked. Elapsed time: 0:00:04.238
+21:37:34,225  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Started updating repository.
+21:37:35,844  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Repository already exists in topology.
+21:37:35,846  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Finished updating repository.
+21:37:35,848  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Started updating commits. Will now retrieve previous snapshot.
+21:37:35,890  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> previousSnapshots: 3785 commit(s). Will now retrieve current snapshot.
+21:37:39,023  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> currentSnapshot: 3785 commits. Will now identify new commits.
+21:37:39,033  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> newCommits: 0 commits. Will now identify commits not found in known repositories.
+21:37:40,573  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:37:40,577  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:37:40,587  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:37:40,626  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Current snapshot saved.
+21:37:40,635  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:37:40,637  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:37:40,643  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:37:40,646  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Checking orphaned commits.
+21:37:41,545  INFO [TopologyUpdater          ] egit:egit(rep1393979339806) -> Orphaned commits checked.
+21:37:41,547  INFO [TopologyUpdater          ] egit:egit(rep1393979339806 -> Finished updating commits.)
+21:37:41,550  INFO [RepositoryMonitor        ] Topology for repository <egit> with id <rep1393979339806> was updated. Elapsed time: 0:00:07.326
+21:38:10,707  INFO [TopologyWindow           ] Time taken to process topology graph for system <egit>: 0:00:03.762
+21:38:10,714  INFO [TopologyWindow           ] Time taken to plot topology graph for system <egit>: 0:00:00.005
+21:38:48,898  INFO [CommitHistoryWindow      ] Process commit history graph for repository <egit> with id <rep1393979339806>. Elapsed time: 0:00:21.283
+21:38:48,907  INFO [CommitHistoryWindow      ] Plot commit history graph for repository <egit> with id <rep1393979339806>. Elapsed time: 0:00:00.006
+21:40:39,301  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:40:56,766  INFO [GitConnector             ] Found 2 remotes for repository rep1393979994840
+21:40:59,897  INFO [RepositoryMonitor        ] Repository <jquery> with id <rep1393979994840> was checked. Elapsed time: 0:00:20.594
+21:40:59,899  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Started updating repository.
+21:41:01,424  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Repository does not exist in topology.
+21:41:03,079  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Finished updating repository.
+21:41:03,080  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Started updating commits. Will now retrieve previous snapshot.
+21:41:03,084  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:41:08,038  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> currentSnapshot: 6001 commits. Will now identify new commits.
+21:41:08,040  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> newCommits: 6001 commits. Will now identify commits not found in known repositories.
+21:41:08,808  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:41:08,810  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToInsert: 6001 commits. Will now insert them into the database.
+21:41:08,823  INFO [CommitDAO                ] Upserting commits from 0 to 3000 from a total of 6001 commits into <jquery>.
+21:41:13,524  INFO [CommitDAO                ] Upserting commits from 3000 to 6000 from a total of 6001 commits into <jquery>.
+21:41:17,721  INFO [CommitDAO                ] Upserting commits from 6000 to 6001 from a total of 6001 commits into system <jquery>.
+21:41:18,446  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:41:18,511  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Current snapshot saved.
+21:41:18,524  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:41:18,525  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:41:18,533  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:41:18,535  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Checking orphaned commits.
+21:41:19,291  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Orphaned commits checked.
+21:41:19,292  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840 -> Finished updating commits.)
+21:41:19,294  INFO [RepositoryMonitor        ] Topology for repository <jquery> with id <rep1393979994840> was updated. Elapsed time: 0:00:19.395
+21:43:51,010  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:44:04,868  INFO [GitConnector             ] Found 2 remotes for repository rep1393980217073
+21:44:07,508  INFO [RepositoryMonitor        ] Repository <jqueryTeste> with id <rep1393980217073> was checked. Elapsed time: 0:00:16.497
+21:44:07,511  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Started updating repository.
+21:44:09,119  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Repository does not exist in topology.
+21:44:09,870  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Finished updating repository.
+21:44:09,871  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Started updating commits. Will now retrieve previous snapshot.
+21:44:09,873  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> previousSnapshots: not found. Will now retrieve current snapshot.
+21:44:14,864  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> currentSnapshot: 6001 commits. Will now identify new commits.
+21:44:14,866  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> newCommits: 6001 commits. Will now identify commits not found in known repositories.
+21:44:19,290  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> commitsNotFoundInSomeReps: 6001 commits. Will now identify which of newCommits should be inserted.
+21:44:19,292  INFO [CommitDAO                ] Getting hashes for all commits in database in system <jquery>.
+21:44:25,303  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:44:25,305  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:44:25,359  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Current snapshot saved.
+21:44:25,382  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:44:25,392  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> commitsNotFoundInSomeRepsWithoutDeletions: 6001 commits. Will now remove deleted commits.
+21:44:25,404  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> commitsToUpdate: 6001 commits. Will now check which of them are new in related repositories.
+21:44:25,445  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> 6001 commits must be updated to include repository rep1393980217073 and 0 should not.
+21:44:25,446  INFO [CommitDAO                ] Updating all commits except 0 commits for system <jquery> to include repository rep1393980217073.
+21:44:27,597  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Checking orphaned commits.
+21:44:28,444  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073) -> Orphaned commits checked.
+21:44:28,445  INFO [TopologyUpdater          ] jquery:jqueryTeste(rep1393980217073 -> Finished updating commits.)
+21:44:28,446  INFO [RepositoryMonitor        ] Topology for repository <jqueryTeste> with id <rep1393980217073> was updated. Elapsed time: 0:00:20.936
+21:44:59,739  INFO [RepositoryMonitor        ] Waking up due to interruption received.
+21:44:59,748  INFO [GitConnector             ] Found 2 remotes for repository rep1393979994840
+21:45:01,120  INFO [RepositoryMonitor        ] Repository <jquery> with id <rep1393979994840> was checked. Elapsed time: 0:00:01.380
+21:45:01,125  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Started updating repository.
+21:45:03,102  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Repository already exists in topology.
+21:45:03,104  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Finished updating repository.
+21:45:03,105  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Started updating commits. Will now retrieve previous snapshot.
+21:45:03,172  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> previousSnapshots: 6001 commit(s). Will now retrieve current snapshot.
+21:45:08,016  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> currentSnapshot: 6001 commits. Will now identify new commits.
+21:45:08,034  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> newCommits: 0 commits. Will now identify commits not found in known repositories.
+21:45:09,586  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsNotFoundInSomeReps: 0 commits. Will now identify which of newCommits should be inserted.
+21:45:09,589  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToInsert: 0 commits. Will now insert them into the database.
+21:45:09,621  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToDelete: 0 commits. Will now delete them from the database.
+21:45:09,680  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Current snapshot saved.
+21:45:09,684  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> nowTrackedCommits: 0 commits. Will now update them into the database.
+21:45:09,686  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsNotFoundInSomeRepsWithoutDeletions: 0 commits. Will now remove deleted commits.
+21:45:09,693  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> commitsToUpdate: 0 commits. Will now check which of them are new in related repositories.
+21:45:09,696  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Checking orphaned commits.
+21:45:10,519  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840) -> Orphaned commits checked.
+21:45:10,525  INFO [TopologyUpdater          ] jquery:jquery(rep1393979994840 -> Finished updating commits.)
+21:45:10,527  INFO [RepositoryMonitor        ] Topology for repository <jquery> with id <rep1393979994840> was updated. Elapsed time: 0:00:09.403
+21:45:49,522  INFO [TopologyWindow           ] Time taken to process topology graph for system <jquery>: 0:00:04.088
+21:45:49,531  INFO [TopologyWindow           ] Time taken to plot topology graph for system <jquery>: 0:00:00.007
+21:47:24,779  INFO [CommitHistoryWindow      ] Process commit history graph for repository <jquery> with id <rep1393979994840>. Elapsed time: 0:01:05.450
+21:47:24,787  INFO [CommitHistoryWindow      ] Plot commit history graph for repository <jquery> with id <rep1393979994840>. Elapsed time: 0:00:00.006
