@@ -1,0 +1,149 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={3.8in, 10in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{courier}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicforall}{\textbf{for each}}
+
+\makeatletter
+\newlength{\continueindent}
+\setlength{\continueindent}{3em}
+
+\renewenvironment{algorithmic}[1][0]%
+   {%
+   \edef\ALG@numberfreq{#1}%
+   \def\@currentlabel{\theALG@line}%
+   %
+   \setcounter{ALG@line}{0}%
+   \setcounter{ALG@rem}{0}%
+   %
+   \let\\\algbreak%
+   %
+   \expandafter\edef\csname ALG@currentblock@\theALG@nested\endcsname{0}%
+   \expandafter\let\csname ALG@currentlifetime@\theALG@nested\endcsname\relax%
+   %
+   \begin{list}%
+      {\ALG@step}%
+      {%
+      \rightmargin\z@%
+      \itemsep\z@ \itemindent\z@ \listparindent2em%
+      \partopsep\z@ \parskip\z@ \parsep\z@%
+      \labelsep 0.5em \topsep 0.2em%\skip 1.2em 
+      \ifthenelse{\equal{#1}{0}}%
+         {\labelwidth 0.5em}%
+         {\labelwidth 1.2em}%
+       \leftmargin\labelwidth \addtolength{\leftmargin}{\labelsep}
+      \ALG@tlm\z@%
+      }%
+      \parshape 2 \leftmargin \linewidth \continueindent \dimexpr\linewidth-\continueindent\relax
+   \setcounter{ALG@nested}{0}%
+   \ALG@beginalgorithmic%
+   }%
+   {% end{algorithmic}
+   % check if all blocks are closed
+   \ALG@closeloops%
+   \expandafter\ifnum\csname ALG@currentblock@\theALG@nested\endcsname=0\relax%
+   \else%
+      \PackageError{algorithmicx}{Some blocks are not closed!!!}{}%
+   \fi%
+   \ALG@endalgorithmic%
+   \end{list}%
+   }%
+\makeatother
+
+\usepackage{mathtools}
+\usepackage{varwidth}% http://ctan.org/pkg/varwidth
+\usepackage{fontspec}
+ % Times New Roman
+\setmainfont[
+BoldFont=timesbd.ttf,
+ItalicFont=timesi.ttf,
+BoldItalicFont=timesbi.ttf
+]{times.ttf}
+
+\title{DyeVC Algorithm}
+\author{cesario.cristiano }
+\date{November 2014}
+
+\begin{document}
+    \noindent {\bf input:} a \texttt{RepositoryInfo} {\it rep} representing the 
+    repository being analyzed and three sets of \texttt{CommitInfo} {\it db.commits,
+    previousSnapshot} and {\it currentSnapshot}.\newline
+    
+    
+    \begin{algorithmic}[1]
+        \State {\bf begin}
+        \State $commitsToDelete \gets previousSnapshot \setminus currentSnapshot$
+        \State {\bf delete} $commitsToDelete$ {\bf from} $database$
+        \State
+        \State $newCommits \gets currentSnapshot \setminus previousSnapshot$
+        \State $commitsToInsert \gets newCommits \setminus db.commits$
+        \State \begin{varwidth}[t]{\linewidth}
+            $commitsToUpdate \gets \{c \mid c \in db.commits \wedge$ \par
+            \hskip\algorithmicindent $\left ( \left ( rep.pullsFrom \cup rep.pushesTo
+            \right ) \setminus c.foundIn \right ) \neq \emptyset \}$
+        \end{varwidth}
+        \State
+        \ForAll {$c \in commitsToInsert$}
+            \State \Call {updateFoundIn} {$c$, $rep$, $currentSnapshot$}
+        \EndFor
+        \State
+        \ForAll {$c \in commitsToUpdate$}
+            \State \Call {updateFoundIn} {$c$, $rep$, $currentSnapshot$}
+        \EndFor
+        \State
+        \State {\bf insert} commitsToInsert {\bf into} $database$
+        \State {\bf update} commitsToUpdate {\bf in} $database$
+        \State $orphanedCommits \gets \{c \mid c \in db.commits \wedge c.foundIn =
+            \emptyset \}$
+        \State {\bf delete} orphanedCommits {\bf from} $database$
+        \State {\bf end}
+        \State
+        \Procedure {updateFoundIn} {{\it c: CommitInfo}, {\it rep: RepositoryInfo},  {\it currentSnapshot: Set of CommitInfo}}
+        \State \begin{varwidth}[t]{\linewidth}
+            $isAhead \gets c \in currentSnapshot \wedge$ \par
+            \hskip\algorithmicindent $\exists r \left ( r \in rep.pushesTo 
+            \wedge c \notin r.commits \right )$
+        \end{varwidth}
+        \State \begin{varwidth}[t]{\linewidth}
+            $isBehind \gets c \notin currentSnapshot \wedge$ \par
+            \hskip\algorithmicindent $\exists r \left ( r \in rep.pullsFrom 
+            \wedge c \in r.commits \right )$
+        \end{varwidth}
+        \State
+        \If {$isBehind$}
+            \State $c.foundIn \gets c.foundIn \cup \{r \mid 
+                r \in rep.pullsFrom \wedge c \in r.commits \}$
+        \EndIf
+        \If {$isAhead$}
+            \State \begin{varwidth}[t]{\linewidth}
+                $c.foundIn \gets c.foundIn \cup rep \cup$ \par
+                \hskip\algorithmicindent $\{r \mid r \in rep.pushesTo \wedge c \in
+                r.commits \}$
+            \end{varwidth}
+        \EndIf
+        \If {$\left (\neg \left (isBehind \right ) \wedge \neg \left (isAhead \right ) \right )$ }
+            \If {$c \notin currentSnapshot$}
+                \State \begin{varwidth}[t]{\linewidth}
+                    $c.foundIn \gets \left ( \left ( c.foundIn \setminus rep \right ) 
+                    \setminus rep.pushesTo \right ) \setminus $ \par
+                    \hskip\algorithmicindent $rep.pullsFrom$
+                \end{varwidth}
+            \Else 
+                \State \begin{varwidth}[t]{\linewidth} 
+                    $isTracked \gets \exists b (b \in rep.branches \wedge$ \par
+                    \hskip\algorithmicindent $c \in b.reachableCommits )$
+                \end{varwidth}
+                \If {$isTracked$}
+                    \State \begin{varwidth}[t]{\linewidth} 
+                        $c.foundIn \gets c.foundIn \cup rep \cup$ \par
+                        \hskip\algorithmicindent $rep.pushesTo \cup rep.pullsFrom$
+                    \end{varwidth}
+                \Else
+                    \State $c.foundIn \gets rep$
+                \EndIf
+            \EndIf
+        \EndIf
+        \EndProcedure
+    \end{algorithmic}
+\end{document}
